@@ -1,4 +1,4 @@
 module.exports = (app) => {
-  app.use('/urls', require('./UrlRouter'));
+  app.use('/api/urls', require('./UrlRouter'));
   app.use('/', require('./DefaultRouter'));
 }
