@@ -12,7 +12,7 @@ exports.create = async (req, res) => {
 
   if (code === process.env.CODE) {
     if (!slug) {
-      slug = nanoid(5);
+      slug = nanoid(8);
     }
 
     slug = slug.toLowerCase();
