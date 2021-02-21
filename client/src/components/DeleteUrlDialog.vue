@@ -21,6 +21,9 @@
             v-model="form.code"
             persistent-hint
             hint="Code is needed for authorization."
+            :type="form.showCode ? 'text' : 'password'"
+            @click:append="form.showCode = !form.showCode"
+            :append-icon="form.showCode ? 'mdi-eye-off' : 'mdi-eye'"
           ></v-text-field>
         </v-card-text>
 

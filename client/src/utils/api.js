@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: 'https://ronnie.link'
+  baseURL: 'https://ronnie.link/api'
 })
